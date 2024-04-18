@@ -4,7 +4,9 @@ import {
   init,
   fetchQuery
 } from "@airstack/airstack-react"
-import { AIRSTACK_API_KEY } from "./key"
+// import { AIRSTACK_API_KEY } from "./key"
+
+const AIRSTACK_API_KEY = '1'
 
 init(AIRSTACK_API_KEY, { env: "prod" })
 

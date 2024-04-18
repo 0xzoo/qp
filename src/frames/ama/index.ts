@@ -32,14 +32,14 @@ export type CustomFrameContext = FrameContext<FrogOptions>
 export type CustomTransactionContext = TransactionContext<FrogOptions>
 
 export const app = new Frog<FrogOptions>({
-  hub: {
-    apiUrl: "https://hubs.airstack.xyz",
-    fetchOptions: {
-      headers: {
-        "x-airstack-hubs": AIRSTACK_API_KEY,
-      }
-    }
-  },
+  // hub: {
+  //   apiUrl: "https://hubs.airstack.xyz",
+  //   fetchOptions: {
+  //     headers: {
+  //       "x-airstack-hubs": AIRSTACK_API_KEY,
+  //     }
+  //   }
+  // },
   assetsPath: '/assets',
   imageOptions: async () => {
     const helvetica = await getFont(400)
